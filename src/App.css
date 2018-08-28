@@ -1,0 +1,40 @@
+body {
+  background-color: #E5E7F3;
+}
+
+.App {
+  margin: 0 auto;
+  font-family: Roboto, sans-serif;
+}
+
+.App-header {
+  background-color: #222;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.body-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 40px 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-column {
+  flex-grow: 1;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
