@@ -5,9 +5,7 @@ import { css } from 'emotion'
 import { connect } from 'react-redux'
 import { createTwoot } from '../actions/twootActions'
 
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
+import Card from './Card';
 
 import Input from '@material-ui/core/Input';
 import InputLabel from '@material-ui/core/InputLabel';
@@ -15,12 +13,6 @@ import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 
 import Button from '@material-ui/core/Button';
-
-const cardStyle = css`
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: #EEF3FF;
-`
 
 const twootInput = css`
   width: 100%;
@@ -56,8 +48,7 @@ class NewTwoot extends React.Component {
   render () {
 
     return (
-      <Card className={css`${cardStyle};`}>
-          <CardContent>
+      <Card backgroundColor="#EEF3FF">
               <form onSubmit={this.handleOnSubmit}>
                 <div>
                     <FormControl className={css`${twootInput}`}>
@@ -68,7 +59,6 @@ class NewTwoot extends React.Component {
                 <br />
                 <Button type='submit' size="large" variant="contained" color="primary">Twoot it!</Button>
               </form>
-          </CardContent>
       </Card>
     )
   }

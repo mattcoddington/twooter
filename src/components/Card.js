@@ -1,18 +1,29 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { css } from 'emotion'
+import styled, { css } from 'react-emotion'
 
-const cardStyle = css`
-  margin: 20px 20px 0 20px;
-  background-color: #EEF3FF;
-  width: 220px;
+const CardContainer = styled('div')`
+  padding: 16px;
+  background-color: ${props => props.backgroundColor};
+  margin: 12px;
+  box-shadow:
+    0px 1px 3px 0px rgba(0, 0, 0, 0.04),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 2px 1px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
 `
 
-const Card = (props) => (
-  <div>
-    <Card className={css`${cardStyle}`}>test</Card>
-  </div>
-)
+class Card extends React.Component {
+
+  render () {
+
+    return (
+      <CardContainer backgroundColor={(() => {if (this.props.backgroundColor) {return this.props.backgroundColor} else return "#fff"})()}>
+        {this.props.children}
+      </CardContainer>
+    )
+  }
+}
 
 export default Card

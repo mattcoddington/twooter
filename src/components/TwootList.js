@@ -4,9 +4,7 @@ import { css } from 'emotion'
 import { connect } from 'react-redux'
 import { fetchTwoots } from '../actions/twootActions'
 
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
+import Card from './Card';
 
 const cardStyle = css`
   margin-top: 20px;
@@ -19,12 +17,12 @@ class TwootList extends React.Component {
   componentDidMount() {
     this.props.fetchTwoots()
   }
-  
+
   render () {
 
     const twootList = this.props.twoots.map(results =>
       <Card key={results.twootId} className={css`${cardStyle}`}>
-        <CardContent>{results.twoot}</CardContent>
+        {results.twoot}
       </Card>
     )
 

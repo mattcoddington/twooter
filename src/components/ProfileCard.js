@@ -8,14 +8,12 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 
 const cardStyle = css`
-  margin: 20px 20px 0 20px;
-  background-color: #EEF3FF;
-  width: 220px;
+  width: 250px;
 `
 
 const ProfileCard = (props) => (
-  <div>
-    <Card className={css`${cardStyle}`}>test</Card>
+  <div className={css`${cardStyle}`}>
+    <Card>Profile</Card>
   </div>
 )
 
