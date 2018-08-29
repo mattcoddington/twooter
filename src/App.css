@@ -15,9 +15,9 @@ body {
 }
 
 .body-container {
-  max-width: 1180px;
+  max-width: 1024px;
   margin: 0 auto;
-  padding: 0 40px 0 40px;
+  padding: 0 25px 0 25px;
   display: flex;
   justify-content: space-between;
 }
@@ -37,4 +37,8 @@ body {
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+hr {
+  border: .5px solid #E5E7F3;
 }

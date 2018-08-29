@@ -34,21 +34,18 @@ class NewTwoot extends React.Component {
 
   handleOnSubmit = (e) => {
     e.preventDefault()
-
     if (this.state.newTwoot != '') {
       this.props.createTwoot(this.state.newTwoot)
     }
-
     this.setState({
       newTwoot: ''
     })
-
   }
 
   render () {
 
     return (
-      <Card backgroundColor="#EEF3FF">
+      <Card cardType='newTwoot'>
               <form onSubmit={this.handleOnSubmit}>
                 <div>
                     <FormControl className={css`${twootInput}`}>
@@ -57,7 +54,7 @@ class NewTwoot extends React.Component {
                     </FormControl>
                 </div>
                 <br />
-                <Button type='submit' size="large" variant="contained" color="primary">Twoot it!</Button>
+                <Button type='submit' size="medium" variant="contained" color="primary">Twoot it!</Button>
               </form>
       </Card>
     )

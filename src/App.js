@@ -10,6 +10,7 @@ import TwootList from './components/TwootList'
 import ProfileCard from './components/ProfileCard'
 
 import AppBar from '@material-ui/core/AppBar';
+import Button from '@material-ui/core/Button';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
@@ -21,8 +22,11 @@ class App extends Component {
       <Provider store={store}>
         <div className="App">
 
-          <AppBar position="static">
+          <AppBar position="sticky">
             <Toolbar>
+              <IconButton color="inherit" aria-label="Menu">
+                <MenuIcon />
+              </IconButton>
               <Typography variant="title" color="inherit">
                 Twooter
               </Typography>

@@ -1,4 +1,5 @@
 import { FETCH_TWOOTS, NEW_TWOOT } from './types'
+import moment from 'moment'
 
 let totalTwoots = 1
 
@@ -9,7 +10,7 @@ export const fetchTwoots = () => dispatch => {
     {
       twootId: totalTwoots++,
       twootAuther: 'Matt',
-      twootDate: 'December 5, 2018',
+      twootDate: 'Aug 24, 2018',
       twoot: 'This is the first twoot'
     }
   })
@@ -22,7 +23,7 @@ export const createTwoot = (twootData) => dispatch => {
     {
       twootId: totalTwoots++,
       twootAuther: 'Matt',
-      twootDate: 'December 5, 2018',
+      twootDate: moment().format('ll'),
       twoot: twootData
     }
   })
