@@ -1,7 +1,7 @@
 import { FETCH_TWOOTS, NEW_TWOOT } from '../actions/types'
 
 const initialState = {
-  example: 'fuck you'
+  username: '@boscogeorge'
 }
 
 export default function(state = initialState, action) {

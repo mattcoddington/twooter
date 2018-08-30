@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
 import twootReducer from './twootReducer'
-import exampleReducer  from './exampleReducer'
+import userProfileReducer  from './userProfileReducer'
 
 export default combineReducers({
   twoots: twootReducer,
-  example: exampleReducer
+  userProfile: userProfileReducer
 })
