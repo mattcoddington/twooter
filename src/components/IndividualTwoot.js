@@ -2,6 +2,7 @@ import React from 'react'
 
 import Card from './Card'
 import Avatar from './Avatar'
+import Icon from './Icon'
 
 import { css } from 'react-emotion'
 
@@ -15,6 +16,13 @@ const metaLine = css`
 `
 const twootBody = css`
   margin-left: 10px;
+`
+const iconContainer = css`
+  display: flex;
+  justify-content: space-between;
+  min-width: 100px;
+  max-width: 200px;
+  margin-top: 20px;
 `
 
 const IndividualTwoot = (props) => {
@@ -31,6 +39,13 @@ const IndividualTwoot = (props) => {
         </div>
 
       </div>
+
+      <hr />
+
+      <div className={css`${iconContainer}`}>
+          <Icon icon='comment' /><Icon icon='retwoot' /><Icon icon='heart' /><Icon icon='email' />
+      </div>
+
     </Card>
   )
 }
