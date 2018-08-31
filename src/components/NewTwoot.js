@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { css } from 'emotion'
 
 import { connect } from 'react-redux'
@@ -9,7 +8,6 @@ import Card from './Card';
 
 import Input from '@material-ui/core/Input';
 import InputLabel from '@material-ui/core/InputLabel';
-import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 
 import Button from '@material-ui/core/Button';
@@ -34,7 +32,7 @@ class NewTwoot extends React.Component {
 
   handleOnSubmit = (e) => {
     e.preventDefault()
-    if (this.state.newTwoot != '') {
+    if (this.state.newTwoot !== '') {
       this.props.createTwoot(this.state.newTwoot)
     }
     this.setState({

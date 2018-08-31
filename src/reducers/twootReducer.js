@@ -1,8 +1,6 @@
-import { FETCH_TWOOTS, NEW_TWOOT } from '../actions/types'
+import { FETCH_TWOOTS, NEW_TWOOT, RANDOM_GEORGE_TWOOT } from '../actions/types'
 
-const initialState = [
-
-]
+const initialState = []
 
 export default function(state = initialState, action) {
   switch(action.type) {
@@ -11,10 +9,15 @@ export default function(state = initialState, action) {
         action.payload
       ]
     case NEW_TWOOT:
-    return [
+      return [
         ...state,
         action.payload
-    ]
+      ]
+    case RANDOM_GEORGE_TWOOT:
+      return [
+        ...state,
+        action.payload
+      ]
     default: return state
   }
 }

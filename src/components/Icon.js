@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'react-emotion'
 
-const IconContainer = styled('div')`
+const IconArt = styled('div')`
   background-image: url('icons/icon-${props => props.icon}.svg');
   background-repeat: no-repeat;
   width: 25px;
@@ -10,7 +10,7 @@ const IconContainer = styled('div')`
 
 const Icon = (props) => {
   return (
-    <IconContainer icon={props.icon} />
+    <IconArt icon={props.icon} />
   )
 }
 

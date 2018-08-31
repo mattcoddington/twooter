@@ -1,2 +1,3 @@
 export const FETCH_TWOOTS = 'FETCH_TWOOTS'
 export const NEW_TWOOT = 'NEW_TWOOT'
+export const RANDOM_GEORGE_TWOOT = 'RANDOM_GEORGE_TWOOT'

@@ -26,14 +26,12 @@ const CardContent = styled(`div`)`
   padding: 16px;
 `
 
-class Card extends React.Component {
-  render () {
+const Card = (props) => {
     return (
-      <CardContainer cardType={this.props.cardType} isProfileCard={this.props.isProfileCard}>
-        <CardContent>{this.props.children}</CardContent>
+      <CardContainer cardType={props.cardType} isProfileCard={props.isProfileCard}>
+        <CardContent>{props.children}</CardContent>
       </CardContainer>
     )
-  }
 }
 
 export default Card;

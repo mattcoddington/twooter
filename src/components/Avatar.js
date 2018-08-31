@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { css } from 'react-emotion'
+import styled, { css } from 'react-emotion'
 
-const avatarContainer = css`
+const AvatarContainer = styled('div')`
   text-align: center;
 `
 
@@ -25,9 +25,9 @@ const Avatar = (props) => {
   }
 
   return (
-    <div className={css`${avatarContainer}`}>
+    <AvatarContainer>
       <img src='images/costanza-profile-pic.jpg' width={avatarSize(props.size)} className={css`${avatarStyle}`} alt={props.altText} />
-    </div>
+    </AvatarContainer>
   )
 }
 

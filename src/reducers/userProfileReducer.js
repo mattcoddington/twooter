@@ -1,7 +1,10 @@
-import { FETCH_TWOOTS, NEW_TWOOT } from '../actions/types'
+// Just using this reducer for simple placeholder data
 
 const initialState = {
-  username: '@boscogeorge'
+  username: '@georgeluvsbosco',
+  firstName: 'George',
+  lastname: 'Costanza',
+  avatarPic: 'images/costanza-profile-pic.jpg'
 }
 
 export default function(state = initialState, action) {

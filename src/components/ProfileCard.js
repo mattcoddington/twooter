@@ -1,68 +1,70 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
-import { css } from 'emotion'
+import styled, { css } from 'react-emotion'
 
 import Card from './Card'
 import Avatar from './Avatar'
 
 import Button from '@material-ui/core/Button';
 
-const containerStyle = css`
-  min-width: 260px;
+const ProfileCardContainer = styled('div')`
+  min-width: 280px;
 
   @media (max-width: 800px) {
-    min-width: 200px;
+    min-width: 230px;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 650px) {
     display: none;
   }
-
 `
-const nameContainer = css`
+const FollowContainer = styled('div')`
+  display: flex;
+  justify-content: space-around;
+`
+const NameContainer = styled('div')`
   text-align: center;
+  h4 {
+    line-height: 0px;
+  }
+  p {
+    font-size: .75em;
+    margin-top: -5px;
+  }
 `
-const name = css`
-  line-height: 0px;
+const StatsContainer = styled('div')`
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0 15px 0;
 `
-const handle = css`
+const StatsItem = styled('div')`
   font-size: .75em;
-`
-const statsContainer = css`
-  display: flex;
-  justify-content: space-around;
-`
-
-const followContainer = css`
-  display: flex;
-  justify-content: space-around;
 `
 
 const ProfileCard = (props) => (
-  <div className={css`${containerStyle}`}>
+  <ProfileCardContainer>
     <Card isProfileCard={true}>
       <Avatar size='small' altText='George Costanza'/>
 
-      <div className={css`${nameContainer}`}>
-        <h4 className={css`${name}`}>George Costanza</h4>
-        <p className={css`${handle}`}>@boscogeorge</p>
-      </div>
+      <NameContainer>
+        <h4>George Costanza</h4>
+        <p>@georgeluvsbosco</p>
+      </NameContainer>
 
       <hr />
 
-    <div className={css`${statsContainer}`}>
-      <div className={css`${handle}`}><strong>Twoots:</strong><br />156</div>
-      <div className={css`${handle}`}><strong>Following:</strong><br />156</div>
-      <div className={css`${handle}`}><strong>Followers:</strong><br />156</div>
-    </div><br />
+    <StatsContainer>
+      <StatsItem><strong>Twoots:</strong><br />1.3M</StatsItem>
+      <StatsItem><strong>Followers:</strong><br />525k</StatsItem>
+      <StatsItem><strong>Following:</strong><br />1.8k</StatsItem>
+    </StatsContainer>
 
-  <div className={css`${followContainer}`}>
-      <Button variant="outlined" size='small'>Follow @boscogeorge</Button>
-    </div>
+    <FollowContainer>
+      <Button variant="outlined" size='small'>Follow @georgeluvsbosco</Button>
+    </FollowContainer>
 
     </Card>
-  </div>
+  </ProfileCardContainer>
 )
 
 export default ProfileCard

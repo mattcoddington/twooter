@@ -4,47 +4,51 @@ import Card from './Card'
 import Avatar from './Avatar'
 import Icon from './Icon'
 
-import { css } from 'react-emotion'
+import styled, { css } from 'react-emotion'
 
-const twootContainer = css`
+const TwootContainer = styled('div')`
   display: flex;
   align-items: center;
+  flex-start:  start;
 `
-const metaLine = css`
+const MetaLine = styled('div')`
   font-size: .75em;
   margin-bottom: 10px;
 `
-const twootBody = css`
+const TwootBody = styled('div')`
   margin-left: 10px;
 `
-const iconContainer = css`
-  display: flex;
-  justify-content: space-between;
-  min-width: 100px;
-  max-width: 200px;
-  margin-top: 20px;
+const IconContainer = styled('div')`
+display: flex;
+justify-content: space-between;
+min-width: 100px;
+max-width: 200px;
+margin-top: 20px;
 `
 
 const IndividualTwoot = (props) => {
   return (
     <Card>
 
-      <div className={css`${metaLine}`}><strong>George Costanza</strong> @boscogeorge - {props.twootDate}</div>
+      <MetaLine>
+        <strong>George Costanza</strong> @boscogeorge - {props.twootDate}
+      </MetaLine>
 
-      <div className={css`${twootContainer}`}>
+      <TwootContainer>
 
         <Avatar size='extra-small' />
-        <div className={css`${twootBody}`}>
+        <TwootBody>
           {props.twootContent}
-        </div>
+        </TwootBody>
 
-      </div>
+      </TwootContainer>
 
       <hr />
 
-      <div className={css`${iconContainer}`}>
+      {/* These icons are just static placehodlers for some visual flare */}
+      <IconContainer>
           <Icon icon='comment' /><Icon icon='retwoot' /><Icon icon='heart' /><Icon icon='email' />
-      </div>
+      </IconContainer>
 
     </Card>
   )
