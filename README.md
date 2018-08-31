@@ -18,7 +18,7 @@ Live on Netlify: https://flamboyant-nobel-472951.netlify.com/
 If I were to maintain this app there are a few things I'd like to add and/or improve upon:
 
 - Character limit and proper validation on new twoots
-- Replace placehodler data with redux store data
+- Replace placeholder data with redux store data
 - Breaking the Seinfeld quote fetch into multiple actions to create a smoother experience in cases where the API is slow to respond
 - Replace user variables with Redux props
 - Do some destructuring on components to make it easier to read and determine what props are being used
