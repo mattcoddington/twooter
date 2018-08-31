@@ -4,7 +4,7 @@ import Card from './Card'
 import Avatar from './Avatar'
 import Icon from './Icon'
 
-import styled, { css } from 'react-emotion'
+import styled from 'react-emotion'
 
 const TwootContainer = styled('div')`
   display: flex;

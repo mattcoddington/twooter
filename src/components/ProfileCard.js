@@ -1,6 +1,6 @@
 import React from 'react'
 
-import styled, { css } from 'react-emotion'
+import styled from 'react-emotion'
 
 import Card from './Card'
 import Avatar from './Avatar'
