@@ -17,6 +17,7 @@ const MetaLine = styled("div")`
 `;
 const TwootBody = styled("div")`
   margin-left: 10px;
+  white-space: pre;
 `;
 const IconContainer = styled("div")`
   display: flex;
