@@ -30,7 +30,7 @@ const IndividualTwoot = props => {
   return (
     <Card>
       <MetaLine>
-        <strong>George Costanza</strong> @boscogeorge - {props.twootDate}
+        <strong>George Costanza</strong> @georgeluvsbosco - {props.twootDate}
       </MetaLine>
 
       <TwootContainer>
