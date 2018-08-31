@@ -20,5 +20,4 @@ If I were to maintain this app there are a few things I'd like to add and/or imp
 - Character limit and proper validation on new twoots
 - Replace placeholder data with redux store data
 - Breaking the Seinfeld quote fetch into multiple actions to create a smoother experience in cases where the API is slow to respond
-- Replace user variables with Redux props
 - Do some destructuring on components to make it easier to read and determine what props are being used
