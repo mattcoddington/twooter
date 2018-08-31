@@ -12,9 +12,10 @@ export const fetchTwoots = () => dispatch => {
     type: FETCH_TWOOTS,
     payload: {
       twootId: totalTwoots++,
-      twootAuthor: "Matt",
+      twootAuthor: "George Costanza",
       twootDate: "Aug 24, 2018",
-      twoot: "This is the first twoot"
+      twoot:
+        "I don't understand, how do these thieves start the car? Cross the wires? I can't even make a pot of spaghetti."
     }
   });
 };
