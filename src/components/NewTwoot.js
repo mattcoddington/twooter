@@ -32,7 +32,7 @@ class NewTwoot extends React.Component {
 
   handleOnSubmit = e => {
     e.preventDefault();
-    if (this.state.newTwoot !== "") {
+    if (this.state.newTwoot.trim()) {
       this.props.createTwoot(this.state.newTwoot);
     }
     this.setState({
