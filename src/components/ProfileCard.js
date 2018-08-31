@@ -11,7 +11,7 @@ const ProfileCardContainer = styled("div")`
   min-width: 280px;
 
   @media (max-width: 800px) {
-    min-width: 230px;
+    min-width: 240px;
   }
 
   @media (max-width: 650px) {
