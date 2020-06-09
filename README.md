@@ -2,7 +2,7 @@
 
 This is a simple twitter-esque app created for a code test. The main purpose of this app is to show my competency working with React + Redux.
 
-Live on Netlify: https://flamboyant-nobel-472951.netlify.com/
+Live on Netlify: https://dreamy-lamport-9dd5c9.netlify.app
 
 ## Stuff used
 
